@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="selector.css"> -->
+    <style>
+        /* Universal Selector */
+         *{
+            border: 1px solid red;
+         }
+
+
+       /* SELECTORS */
+       /* id Selector (fastest selector) */
+       #demo{
+        color: red;
+       }
+
+       /* Element Selector  tag selector*/
+       /* p{
+        color: blue;
+       } */
+
+       /* class selector */
+       .demo1{
+        color: rgb(193, 11, 244);
+       }
+
+
+       /* group selector */
+       #demo,.demo1{
+        background-color: yellow;
+       }
+
+       /* Attribute Selector */
+       input[type="password"]{
+        background-color: blue;
+       }
+
+
+       a[href="C"]{
+        color: red;
+       }
+
+       /* Descendent Selector */
+       /* section div  span{
+        color: red;
+       } */
+
+       /* Child Combinator */
+       section>div>span{
+        color: red;
+       }
+    </style>
+</head>
+<body>
+    <!-- priority -->
+     <!-- inline>internal=external -->
+      <!-- preference -->
+     <!-- inline<internal<external -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta quisquam officia tenetur, aspernatur voluptatibus odio, perferendis ipsum voluptates, sed minus assumenda. Veritatis nihil aperiam, at optio consectetur perferendis? Velit!</p>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta quisquam officia tenetur, aspernatur voluptatibus odio, perferendis ipsum voluptates, sed minus assumenda. Veritatis nihil aperiam, at optio consectetur perferendis? Velit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta quisquam officia tenetur, aspernatur voluptatibus odio, perferendis ipsum voluptates, sed minus assumenda. Veritatis nihil aperiam, at optio consectetur perferendis? Velit!</p>
+    <p class="demo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta quisquam officia tenetur, aspernatur voluptatibus odio, perferendis ipsum voluptates, sed minus assumenda. Veritatis nihil aperiam, at optio consectetur perferendis? Velit!</p>
+    <p class="demo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta quisquam officia tenetur, aspernatur voluptatibus odio, perferendis ipsum voluptates, sed minus assumenda. Veritatis nihil aperiam, at optio consectetur perferendis? Velit!</p>
+
+
+    <input type="text" placeholder="Enter Name">
+    <input type="email" placeholder="Enter Email">
+    <input type="password" placeholder="Enter Password">
+
+    <a href="A">click</a>
+    <a href="B">click</a>
+    <a href="C">click</a>
+
+    <section>
+        <div>
+            <p>
+                <span>This is inside</span>
+            </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            
+                <span>This is inside</span>
+          
+        </div>
+    </section>
+
+    <span>This is Outside</span>
+
+
+
+</body>
+</html>
