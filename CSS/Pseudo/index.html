@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #an1{
+        color: red;
+       }
+        #an1:visited{
+            color: rgb(51, 246, 2);
+        }
+        #an2:active{
+            font-size: 60px;
+        }
+        #inp1:focus{
+            background-color: yellow;
+        }
+        #inp2:invalid{
+            color: red;
+        }
+        #inp2:valid{
+            color: greenyellow;
+        }
+
+        #inp3:required{
+            border-color: red;
+        }
+
+        input[type="checkbox"]:checked{
+            height: 100px;
+            width: 100px;
+        }
+
+        li:first-child{
+            background-color: red;
+        }
+        li:last-child{
+            background-color: rgb(55, 9, 239);
+        }
+        li:empty{
+            background-color: violet;
+        }
+        /* li:nth-child(even){
+            background-color: black;
+        } */
+
+        #para1::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+        #para1::first-line{
+            background-color: violet;
+        }
+
+        #para2::selection{
+            background-color: yellow;
+            color: red;
+        }
+
+        input::placeholder{
+            text-align: center;
+            color: red;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <!-- Link Related -->
+        <a href="#####" id="an1">Visited</a>
+        <a href="####" id="an2">active</a>
+
+        <!-- Input Related -->
+        <form action="">
+
+            <input type="text" placeholder="Enter Name" id="inp1">
+            <input type="email" placeholder="Enter Email" id="inp2">
+            <input type="text" placeholder="Enter lastname" id="inp3" required>
+            <input type="text" placeholder="Enter city" value="Pune" readonly>
+
+            <input type="checkbox" checked>
+            <input type="submit">
+        </form>
+
+        <!-- Position /Numbered Related -->
+
+        <ul>
+            <li>Itemsssss</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li></li>
+            <li>Item</li>
+            <li>Item</li>
+            <li></li>
+            <li>Item</li>
+            <li>Item</li>
+            <li></li>
+            <li>Item</li>
+            <li>last</li>
+        </ul>
+
+
+        <p id="para1">Demo Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quisquam! Ratione maxime similique voluptatem error, quibusdam eaque laborum quos perspiciatis impedit rerum, dicta nostrum molestiae doloremque qui numquam sit veniam.</p>
+
+        <p id="para2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi quam dignissimos, ipsam dolore, quibusdam incidunt aliquam pariatur sequi error dicta perspiciatis! Nam reiciendis quae quasi dicta nulla suscipit quos!
+        </p>
+
+        <input type="text" placeholder="Enter">
+
+
+       <!-- 1) create file with name linkPseudo.html and add anchor in that and apply the link related pseudo classes on that
+       2) create file with name positionPseudo.html and add anchor in that and apply the position related pseudo classes on that
+       3) create file with name inputPseudo.html and add anchor in that and apply the inputPseudo related pseudo classes on that
+       4)create one more file with name root.html and add the :root in that and change the color and background color using that -->
+</body>
+</html>
