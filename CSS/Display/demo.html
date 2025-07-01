@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #parent{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        #uniq{
+            width: 100%;
+            text-align: center;
+        }
+        .child{
+            border: 1px solid red;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .child img{
+            width: 100%;
+        }
+
+        @media only screen and (min-width:768px){
+               .child{
+            
+            width: 48%;
+             border: 1px solid rgb(10, 92, 224);
+           
+            
+        }
+        }
+        @media only screen and (min-width:1200px){
+               .child{
+            
+            width: 30%;
+           
+            
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="parent">
+
+
+        <div id="uniq">
+            <h2>Recent Blogs</h2>
+        </div>
+        <div class="child">
+            <img src="https://organicindia.com/cdn/shop/articles/Herbs_for_digestion_and_bloating_8a3481ca-9883-49b2-8127-9ef2268d95d9_535x420_crop_center.png?v=1751029746"
+                alt="Image Not Found">
+            <h4>This is Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <button>READ MORE</button>
+        </div>
+        <div class="child">
+            <img src="https://organicindia.com/cdn/shop/articles/Herbs_for_digestion_and_bloating_8a3481ca-9883-49b2-8127-9ef2268d95d9_535x420_crop_center.png?v=1751029746"
+                alt="Image Not Found">
+            <h4>This is Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <button>READ MORE</button>
+        </div>
+        <div class="child">
+            <img src="https://organicindia.com/cdn/shop/articles/Herbs_for_digestion_and_bloating_8a3481ca-9883-49b2-8127-9ef2268d95d9_535x420_crop_center.png?v=1751029746"
+                alt="Image Not Found">
+            <h4>This is Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <button>READ MORE</button>
+        </div>
+
+    </section>
+</body>
+
+</html>
