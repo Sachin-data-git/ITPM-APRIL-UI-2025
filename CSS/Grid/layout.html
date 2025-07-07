@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 500px;
+            border: 2px solid red;
+            display: grid;
+            grid-template-areas: "hdr hdr hdr hdr hdr"
+                                 "sbr main main main main"
+                                 "ftr ftr ftr ftr ftr";
+
+                                 grid-template-rows: 100px 300px 100px;
+
+        }
+        div{
+            border: 1px solid green;
+        }
+        #item-1{
+            grid-area:hdr ;
+        }
+        #item-2{
+            grid-area:sbr ;
+        }
+        #item-3{
+            grid-area:main ;
+        }
+        #item-4{
+            grid-area:ftr ;
+        }
+
+    </style>
+</head>
+<body>
+       <section>
+        <div id="item-1">header</div>
+        <div id="item-2">sbr</div>
+        <div id="item-3">main</div>
+        <div id="item-4">footer</div>
+       </section>
+</body>
+</html>
