@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: 1px solid red;
+            /* Specifies how long the transition from the old value to the new value should take. */
+            transition-duration: 5s;
+            /* Defines when the transition will start. It allows a transition to begin execution some period of time from when it is applied. */
+            /* transition-delay: 5s; */
+              /* Describes how the intermediate values used during a transition will be calculated. */
+
+              /* constant speed */
+            /* transition-timing-function:linear ; */
+
+            /* default,slow start and end */
+            /* transition-timing-function:ease ; */
+
+               /* slow start and end fast */
+            /* transition-timing-function: ease-in; */
+
+               /* fast start and end slow */
+            transition-timing-function: ease-out;
+
+               /* slow start and end slow */
+            transition-timing-function: ease-in-out;
+
+            background-color: blue;
+        }
+
+        div:hover {
+            /* background-color: orange; */
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        transition property in css is used to create smooth animation when css property values change
+    </div>
+</body>
+
+</html>
