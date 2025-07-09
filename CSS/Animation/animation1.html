@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation-name: demo;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-direction: reverse; */
+        }
+
+        @keyframes demo {
+
+            0% {
+                transform: translate(-200px, 0px) rotateZ(360deg);
+            }
+
+            25% {
+                transform: translate(1000px, 0px) rotateZ(360deg);
+                background-color: green;
+                border-radius: 100%;
+
+            }
+
+            50% {
+                transform: translate(1000px, 400px) rotateZ(360deg);
+                background-color: blue;
+                border-radius: 0%;
+            }
+
+            75% {
+                transform: translate(0px, 400px) rotateZ(360deg);
+                background-color: rgb(36, 214, 8);
+                border-radius: 100%;
+            }
+
+            100% {
+                 transform: translate(0px, 0px) rotateZ(360deg);
+                background-color: rgb(4, 150, 194);
+                border-radius: 0%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis excepturi sed voluptates laboriosam et dolor est quia, vero molestias, ipsam, non illo facere! Officiis, voluptas? Quo dolorem commodi fuga molestiae?</p>
+</body>
+
+</html>

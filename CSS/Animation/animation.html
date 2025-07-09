@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid red;
+            /* background-color: yellow; */
+           /* In animation elements gradualy change from  one style to another */
+           /* animation-name: ; */
+           /* animation-duration: ; */
+           /* animation-delay: ; */
+           /* animation-iteration-count: ; */
+           /* animation-direction: ; */
+           /* animation-timing-function: ; */
+           /* animation-fill-mode: ; */
+             /* shorthand */
+           /* animation: ; */
+
+           /* animation-name: demo; */
+           /* it defines that how long animation should take to complete */
+           /* note:if this property is not specified .no animation will occur the by default duration of animation is 0 second */
+           /* animation-duration:5s; */
+           /* it defines that the delay for the start of an animation */
+           /* animation-delay: 5s; */
+
+           /* Defines the number of times an animation cycle is played. The default value is one, meaning the animation will play from beginning to end once. */
+           /* animation-iteration-count:2 ; */
+
+           /* Defines whether or not the animation should play in reverse on alternate cycles. */
+           /* animation-direction:normal ; */
+           /* animation-direction:reverse ; */
+           /* animation-direction:alternate ; */
+           /* animation-direction:alternate-reverse ; */
+
+           /* animation-timing-function: ease-in; */
+
+           /* Defines what values are applied by the animation outside the time it is executing. */
+           /* animation-fill-mode:none ; */
+
+           /* The final property value (as defined in the last @keyframes at-rule) is maintained after the animation completes. */
+
+           /* animation-fill-mode:forwards ; */
+           /* The beginning property value (as defined in the first @keyframes at-rule) is applied before the animation is displayed,  */
+           /* animation-fill-mode:backwards ; */
+           /* animation-fill-mode:both ; */
+
+           /* animation shorthand */
+            /* animation-name
+            animation-duration
+            animation-timing-function
+            animation-delay
+            animation-iteration-count
+            animation-direction */
+           animation:demo 5s linear 1s infinite reverse;
+        }
+
+        @keyframes demo {
+
+               0%{
+                    /* background-color: blue; */
+                    transform: translateX(-200px);
+               }
+               100%{
+                     /* background-color: orange; */
+                     transform: translateX(1000px);
+               } 
+        }
+    </style>
+</head>
+<body>
+      <div>
+
+      </div>
+</body>
+</html>
