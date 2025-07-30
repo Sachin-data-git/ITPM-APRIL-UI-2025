@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+
+<body>
+    <script>
+        // let age = 17;
+
+        // if (age >= 18) //17>=18  == False
+        // {
+        //     console.log("You are Eligible for Voting");
+        //     console.log("You are Eligible for driving Liscence");
+        // }
+        // else {
+        //     console.log("You are Not Eligible");
+
+        // }
+
+
+        // let a=40;
+        // let b=20;
+        // let c=30;
+
+        // console.log(Math.max(a,b,c,50,56,76));
+
+        // if(a>b){  //40>20
+        //     if(a>c){  //40>30
+        //         console.log(a);
+        //     }else{
+
+        //         console.log(c);
+        //     }
+        // }
+        // else if(b>c){   //20>30
+        //     console.log(b);
+        // }
+        // else{
+        //     console.log(c);
+        // }
+
+
+        //    SWITCH CASE
+
+        // switch(var){
+        //      case 1: console.log(first) 
+        //      case 2: console.log(first) 
+        //      case 3: console.log(first) 
+        //      .
+        //      .
+
+
+
+        //      default:console.log(first)
+
+
+        //      }
+
+        //  let number=parseInt(prompt("Enter A Number"));
+
+        //  switch(number){
+        //     case 1 : console.log("sun");break;
+        //     case 2 : console.log("Mon");break;
+        //     case 3 : console.log("Tue");break;
+        //     case 4 : console.log("Wed");break;
+        //     case 5 : console.log("Thu");break;
+        //     case 6 : console.log("Fri");break;
+        //     case 7 : console.log("Sat");break;
+        //     default: console.log("Pls enter Valid Number")
+        //  }
+
+
+        // Ternary Operator
+
+        //syntax-   condition? Exp1 :Exp2 ;
+        //if cond=true  exp1 Will Execute
+        //if cond=false  exp2 Will Execute
+        let name = "Aman"
+        let age = 10;
+
+        let result = (age >= 18) ? "Eligible" : "Not Eligible";
+        //    console.log(name +"You are "+ result +" for voting");
+        console.log(`${name} you are ${result} for voting`)
+
+
+
+        // TRUTHY FALSY VALUEs
+
+        if ("NaN") {
+            console.log("This is truthy value");
+        }
+        else {
+            console.log("This is Falsy value");
+
+        }
+
+
+        let username = prompt("Enter Username");
+        let password = prompt("Enter passs");
+
+        if (username == "demo" && password == "123") {
+            console.log("login...")
+        }
+        else {
+            console.log("incorrect username and password")
+        }
+
+
+
+//         Task:
+// Write a program that takes a number as input and checks if the number is positive, negative, or zero.Use if-else statements.
+
+// Enter a number: -3
+// The number is negative.
+
+// 1. Even or Odd
+//         Task:
+// Take an integer as input and check if it is even or odd.
+
+// 2. Age Check
+//         Task:
+// Ask the user for their age.If the user is 18 or older, print “You are eligible to vote.” Otherwise, print “You are not eligible to vote.”
+
+//         3. Largest of Two Numbers
+//         Task:
+// Take two numbers as input and print which one is greater, or if they are equal.
+
+// 4. Grading System
+//         Task:
+// Input a student’s mark(0 - 100), and print the grade:
+
+//         A: 90–100
+
+//         B: 80–89
+
+//         C: 70–79
+
+//         D: 60–69
+
+//         F: below 60
+
+//         5. Leap Year Checker
+//         Task:
+// Input a year and check if it’s a leap year.
+//             Input: Marks out of 100
+//         Task: 1
+
+// If marks >= 90: Grade A
+
+// Else if marks >= 75: Grade B
+
+// Else if marks >= 60: Grade C
+
+// Else if marks >= 40: Grade D
+
+//         Else: Fail
+
+
+
+//         Input: Any integer
+//         Task: 2
+
+// If number > 0
+
+// If number is even → "Positive Even"
+
+// Else → "Positive Odd"
+
+// Else if number < 0
+
+// If number is even → "Negative Even"
+
+// Else → "Negative Odd"
+
+// Else → "Zero"
+
+
+
+// Simple Login System
+//         Input: Username and Password
+//         Task: 3
+
+// If username is correct
+
+// If password is correct → "Login Successful"
+
+// Else → "Wrong Password"
+
+// Else → "Username not found"
+
+
+
+//         Task: 4
+
+// Find maximun and minimum number from three integer number(Take input from user)
+
+
+
+// Day of the Week
+
+
+//         Input: Number(1–7)
+
+
+//         Output: Corresponding weekday name(e.g., 1 = Monday)
+
+
+
+
+// Simple Calculator
+
+//         Input: Two numbers and an operator(+, -, *, /,%)
+
+
+//         Output: Result of the operation using switch case on the operator
+
+
+
+
+
+// Month Name
+
+//             Input: Number(1–12)
+
+
+//             Output: Name of the month(e.g., 1 = January)
+
+
+
+// Grade Descriptor
+
+//             Input: Grade letter(A, B, C, D, F)
+
+
+//             Output: Description(e.g., A = Excellent)
+
+
+
+// Traffic Light Signal
+
+//             Input: Color(red, yellow, green)
+
+
+//             Output: Action(e.g., "Stop", "Wait", "Go")
+
+
+
+
+//             Menu - Driven Program
+
+
+//             Input: Choice from a menu(e.g., 1 = Add, 2 = Subtract, etc.)
+
+//             Output: Perform selected operation
+
+
+
+    </script>
+</body>
+
+</html>
