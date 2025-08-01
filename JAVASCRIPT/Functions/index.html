@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+
+    <script>
+
+        //    Syntax
+        // function Defination
+        // function  functionName(){
+        //     block
+        // }
+
+        // calling
+        //  functionName()
+
+
+        // Default function
+        //     let n=10;
+        //     let m=20;
+
+
+        //    function add(){
+        //     console.log(n+m);
+        //    }
+
+        //    add();
+        //    add();
+
+        //parameterised Function
+
+        // let p=20;
+        // let q=10;
+        // function sub(a,b){
+        //     console.log(a-b);
+        // }
+        // sub(p,q);
+        // sub(40,10);
+
+
+        //default parameter
+
+        // let username1=prompt("Enter Your Name")
+        // function userName(name="Alice"){
+        //     console.log("Hello "+ name )
+        // }
+        // userName(username1);
+        // userName();
+
+        //Rest Parameter
+        // function restPara(...restValue){
+
+        //     console.log(restValue);
+        // }
+        // restPara(1,2,3,4,5);
+
+
+        //return type
+        //     function mul(a,b){
+        //       return a*b
+        //     }
+        //    let result=mul(10,20);
+        //    let result1=mul(10,30);
+        //    console.log(result)
+        //    console.log(result1)
+
+        //Arrow Function
+        // const Add=()=>{
+
+        // }
+        // Add();
+
+
+        //IIFE
+        // (()=>{
+        //     console.log(10+20);
+        // })();
+
+
+        // Function Expression
+        // let greet = function () {
+        //     console.log("greet");
+        // }
+        // greet();
+
+
+        
+        //Traditional Function
+        // function greet1() {
+        //     console.log("greet1")
+        // }
+        // greet1();
+
+
+        let a="global"
+
+        function First(){
+            let x="vishwajeet";  //local
+            console.log(x);
+            console.log(a);
+        }
+
+        First();
+
+        function Second(){
+            // console.log(x);
+            console.log(a);
+        }
+        Second();
+
+
+        //js closure function within function
+
+        function Parent(){
+            let x=10;
+            console.log("Inside Parent x is "+x);
+            console.log("Inside Parent y is "+y);
+
+            function child(){
+                let y=20;
+                console.log("Inside child x is "+ x);
+                console.log("Inside child y is "+ y);
+            }
+            child();
+        }
+        Parent();
+
+// TASK
+
+//         Create a function that prints the addition of two numbers.
+
+
+// Create a function that takes two numbers and prints their product.
+
+
+// Write a function that subtracts one number from another and returns the result.
+
+// Write a function divide(a, b) that returns the result of dividing a by b. Set a default value of 1 for b.
+
+
+// Create a function greet(name = "User") that prints a greeting message like "Hello, User!". (default parameter)
+
+// Write a function square(num = 2) that returns the square of a number.
+
+
+// Create a function fullName(firstName, lastName = "Doe") that prints the full name of a person.
+
+// Write a function findArea(length = 5, width = 10) that returns the area of a rectangle.
+
+
+// Create a function showAge(name = "Alice", age = 20) that prints a sentence like "Alice is 20 years old.". using literals
+
+// Write a function isEven(num = 0) that returns true if the number is even, and false otherwise.
+// Create a function repeatMessage(message = "Hi", times = 3) that prints the message multiple times.
+
+// Write a function formatEmail(username = "user", domain = "example.com") that returns an email address in the format user@example.com.
+
+// Write a function isPositive(num = 0) that returns true if the number is positive, false otherwise.
+
+// Create a function minValue(a = 10, b = 20) that returns the smaller of the two numbers.
+
+
+// Write a function maxValue(a = 10, b = 20) that returns the larger of the two numbers.
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
