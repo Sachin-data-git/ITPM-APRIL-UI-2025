@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+      <script>
+        let str="Hello Welcome...!E  "
+        console.log(str.length);
+        console.log(str.charAt(0));
+        console.log(str.charCodeAt(1));
+        console.log(str.indexOf("e"));
+        console.log(str.slice(0,4)); //Hello
+        console.log(str.split("e"));
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        console.log(str.bold());
+        console.log(str.italics());
+        document.writeln(str.bold());
+        document.writeln(str.italics());
+        console.log(str.trim())
+        console.log(str.trimStart())
+        console.log(str.trimEnd())
+        // console.log(str.replace("e","L"));
+        // console.log(str.replaceAll("e","L"));
+        console.log(str.replace(/E/gi,"L"));   //regular expression  g-global  i-insensitively
+        console.log(str.includes("e"));
+        console.log(str.startsWith("H"));
+        console.log(str.endsWith(""));
+
+
+        let str1="Hello";
+        let str2=" Alice";
+
+        // 1)Using concat Method
+        let str3=str1.concat(str2);
+        console.log(str3);
+
+        // 2)using  plus operator
+        console.log(str1+str2);
+
+        //using backtick Litereals
+        console.log(`${str1} ${str2}`);
+        //using comma
+        console.log(str1,str2);
+
+
+        console.log(str.substring(0,3));
+        console.log(str.substr(0,3));
+        
+
+    //    Task
+    // Use all Methods of strings
+
+
+    
+        //         Question:
+        // You are given an array of 20 product objects. Each product has the following properties:
+        // id: Unique product ID (number)
+         // name: Name of the product (string)
+         // category: Category of the product — either "Silver", "Gold", or "Diamond" (string)
+         // price: Price of the product (number)
+
+
+
+
+        // Your task is to:
+
+        // Create an array of 20 such products with a mix of the three categories.
+        // Use the filter() method to extract:
+        // All Silver category products
+        // All Gold category products
+        // All Diamond category products
+
+        
+
+      </script>
+</body>
+</html>
