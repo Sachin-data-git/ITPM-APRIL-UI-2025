@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shallow And Deep Copy</title>
+</head>
+<body>
+      <script>
+        //js object
+        let original={
+            name:"Sanjay",
+            age:30,
+            Marks:{
+                math:30,
+                sci:40,
+            }
+        }
+
+        //shallow Copy
+        // let shallowcopy=Object.assign({},original);
+        // shallowcopy.Marks.math=100;
+        // console.log(shallowcopy);
+        // console.log(original);
+
+        //Deep Copy
+        let deepcopy=JSON.parse(JSON.stringify(original));
+        deepcopy.Marks.math=100;
+        console.log(deepcopy);
+        console.log(original);
+
+
+
+        
+        
+        
+        //js object to json = JSON.stringify()
+        // let json=JSON.stringify(original);
+        // console.log(json);
+
+         // json to js object   = JSON.parse()
+        // let js_object=JSON.parse(json);
+        // console.log(js_object)
+
+
+      </script>
+</body>
+</html>

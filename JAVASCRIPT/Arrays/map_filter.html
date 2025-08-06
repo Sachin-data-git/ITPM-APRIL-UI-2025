@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map And Filter</title>
+</head>
+<body>
+       <script>
+           
+           //map - higher order function 
+           //Process the old array and stored that processed values into new array
+           let arr=[1,2,3,4,5,6,7,8,9,10];
+
+           let newArr=arr.map((n)=>{
+              return n+2;
+           });
+           console.log(newArr);
+
+
+       // filter :- higher order function
+       //it filter out the elements according to the condition and stored that filtered value into new array
+
+           let newArr1=arr.filter((m)=>{
+              return m%2==0;
+           });
+           console.log(newArr1);
+
+           
+           //forEach -It does not creates the new Array it only access the each every element from array
+           let Data=arr.forEach((x)=>{
+            return x;
+           })
+           console.log(Data);
+
+
+
+
+
+
+
+       </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+
+    <script>
+        // let names=["aman","ajay","ashish"];
+
+
+
+        //JSON Javascript Object Notation
+        // let obj1={
+        //       "name":"ajay",
+        //       "age":20,
+        //       "address":"pune"
+        // }
+
+        //js Object
+        // let obj = {
+        //     name: "ajay",
+        //     age: 20,
+        //     address: "pune"
+        // }
+
+
+        //How To access the values from object
+        // console.log(obj.name);
+        // console.log(obj.age);
+
+        // let arrobj = [
+        //     {
+        //     name: "ajay",
+        //     age: 20,
+        //     address: "pune"
+        // },{
+        //  name: "Aman",
+        //     age: 30
+        // }
+        // ]
+
+        //How To access the values from  Array object
+        // console.log(arrobj[0].name +" and my address is "+ arrobj[0].address);
+        // console.log(arrobj[1].name +" and my address is "+ arrobj[0].address);
+        
+        // for(i=0;i<arrobj.length;i++){
+        //     console.log(arrobj[i].name +" and my address is "+ arrobj[0].address);
+        // }
+
+
+
+        // let obj1={
+        //     a:1,
+        //     b:2,
+        //     c:3
+        // }
+
+        // console.log(Object.keys(obj1));
+        // console.log(Object.values(obj1));
+        // console.log(Object.entries(obj1));
+
+        // const obj={
+        //     name:"aman",
+        //     age:20,
+        //     city:"Pune",
+        //     marks:{
+        //         math:30,
+        //         sci:40
+        //     }
+        // }
+
+        //update
+        // obj.name="Ajay";
+        // obj.email="demo@gmail.com";
+        // console.log(obj);
+        
+        //delete
+        // delete obj.age;
+        // console.log(obj);
+
+        
+        // Object.freeze(obj);
+        //   obj.name="ajay";
+        //   console.log(obj);
+
+        
+        // let arr=[1,2,3,4,5];
+        // let[n1,n2,n3]=arr;
+
+        const obj={
+            name:"aman",
+            age:20,
+            city:"Pune",
+            marks:{
+                math:30,
+                sci:40
+            }
+        }
+        const obj1={
+            name1:"aman",
+            age1:20,
+            city1:"Pune",
+            marks1:{
+                math:30,
+                sci:40
+            }
+        }
+
+//destructuring  and rest
+        let{name,age,city,...marks}=obj;
+        console.log(name);
+        console.log(marks);
+
+        //spread operator
+        let obj3={...obj,...obj1};
+        console.log(obj3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIlter</title>
+</head>
+<body>
+    <script>
+        let item=[
+            {
+            id:1,
+            data:"ring",
+            category:"silver"
+        }
+        ,{
+            id:2,
+            data:"ring1",
+            category:"gold"
+        }
+        ,{
+            id:3,
+            data:"ring3",
+            category:"gold"
+        }
+        ,{
+            id:4,
+            data:"ring4",
+            category:"gold"
+        }
+        ]
+        let catg=prompt("enter Category")
+
+        let filterData=item.filter((n)=>{
+            if(n.category===catg)
+            return n;
+        })
+        console.log(filterData);
+    </script>
+</body>
+</html>
