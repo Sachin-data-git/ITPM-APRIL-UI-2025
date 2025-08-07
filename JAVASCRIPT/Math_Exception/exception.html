@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.11.0/axios.min.js" integrity="sha512-h9644v03pHqrIHThkvXhB2PJ8zf5E9IyVnrSfZg8Yj8k4RsO4zldcQc4Bi9iVLUCCsqNY0b4WXVV4UB+wbWENA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        // try{
+        //     console.log(num1/num2);
+        // }catch(err){
+        //     console.log(err)
+
+        // }
+
+        // let num1 = 100;
+        // let num2 = 0;
+
+        // if (num2 == 0) {
+        //     throw new Error("Cant divide by 0")
+        // }else{
+        //     console.log(num1/num2)
+        // }
+
+
+
+       async function fetchData(){
+            const options = {
+            method: 'GET',
+            url: 'https://imdb-top-100-movies.p.rapidapi.com/',
+            headers: {
+                'x-rapidapi-key': '4876bfe787mshde69d0b5ecaadfep1ec372jsnf90842f5c188',
+                'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
+            }
+        };
+
+        try{
+
+            let response=await axios.request(options);
+            console.log(response.data);
+            response.data.map((item)=>{
+                console.log(item.title);
+            })
+        }catch(error){
+            console.log(error);
+        }
+        finally{
+            console.log("This is always execute")
+        }
+
+
+        }
+
+        fetchData();
+
+
+        //try to fetch the data 
+        //use try catch and finally and also throw manual exception
+        
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
