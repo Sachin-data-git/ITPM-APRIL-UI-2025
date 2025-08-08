@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #demo{
+            font-size: 50px;
+        }
+        .red{
+            color: red;
+            background-color: yellow;
+        }
+        /* .blue{
+            color: blue;
+            background-color: black;
+        } */
+    </style>
+</head>
+<body>
+    <p class="blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores magnam pariatur, beatae hic veritatis numquam id animi sed, dicta reprehenderit asperiores, maxime illum dolores excepturi velit? Omnis porro exercitationem accusamus.</p>
+
+    <button onclick="addClass()">addClass</button>
+    <button onclick="removeClass()">removeClass</button>
+    <button onclick="toggleClass()" id="accept">Add</button>
+    <button onclick="replaceClass()">replaceClass</button>
+    <button onclick="addId()">Add Id</button>
+
+    <script>
+        let para=document.querySelector("p");
+        //1  element.style.propertyName="value"
+        // para.style.color="red";
+        // para.style.fontSize="50px";
+
+        //2   element.style.setProperty("PropertyName","value")
+        // para.style.setProperty("color","red")
+        // para.style.setProperty("font-size","50px")
+
+
+     //3 using classList
+    function addClass(){
+         para.classList.add("red");
+    }
+    function removeClass(){
+         para.classList.remove("red");
+    }
+    function toggleClass(){
+         para.classList.toggle("red");
+         document.getElementById("accept").innerText="Remove";
+         
+    }
+    function replaceClass(){
+         para.classList.replace("blue","red");
+    }
+
+
+    //4  using Id
+    function addId(){
+        para.id="demo";
+    }
+
+
+
+//     Task Questions using classList.add(), classList.remove(), classList.toggle(), classList.replace()
+// 1.Add Class
+// Create a button that, when clicked, adds a CSS class highlight to a <p> tag to change its background color to yellow.
+
+// 2.Remove Class
+// Create a button that, when clicked, removes the highlight class from a <p> tag to restore its default style.
+
+//3. Toggle Class
+// Create a button that, when clicked, toggles the class active on a <div> element to show/hide a border.
+
+//4. Replace Class
+// Create a button that, when clicked, replaces the class old-style with new-style on a heading element.
+
+// 5.Multiple Classes Add
+// Create a button that, when clicked, adds two classes (bg-red and text-white) to a <div> element.
+
+// 6.Multiple Classes Remove
+// Create a button that, when clicked, removes two classes (bg-red and text-white) from a <div> element.
+
+//7. Toggle Multiple Classes
+// Create a button that toggles two classes (large-text and underline) on a <p> element when clicked.
+
+//8. Add Class to Multiple Elements
+// Create a button that, when clicked, adds the class highlight to all <li> items in a list.
+
+// 9.Remove Class from Multiple Elements
+// Create a button that, when clicked, removes the class highlight from all <li> items in a list.
+
+// 10.Replace Class in Multiple Elements
+// Create a button that, when clicked, replaces the class old-style with new-style for all <h2> elements.
+
+//11  create you tube subscribe button using classListm Property and innertext and innerHtml
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div2{
+            height: 300px;
+            border: 2px solid red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+      <!-- <div id="firstDiv">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    <hr>
+      <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div> -->
+
+
+      <div id="parent">
+        <p>Lorem ipsum dolor sit amet.</p>
+
+      </div>
+
+
+      <div id="div1">
+        <h2>This is Original</h2>
+      </div>
+      <button onclick="update()">update above h2</button>
+      <hr>
+     <div id="div2">
+         <h5>This is h5</h5>
+     </div>
+      <button onclick="Delete()">Delete</button>
+
+
+
+      <div id="div3">
+        <p>Lorem ipsum dolor sit amet.1</p>
+        <p id="second">Lorem ipsum dolor sit amet.2</p>
+        <p>Lorem ipsum dolor sit amet.3</p>
+      </div>
+      <button onclick="before()">InsertBefore</button>
+
+
+      <script>
+        //  getElementById()
+        //  createElement()
+        //  createTextNode()
+        //  appendChild()
+        //  replaceChild()
+        //  remove()
+        //  removeChild()
+        //  inserBefore()
+
+        // let parent=document.getElementById("firstDiv");
+        // let para=parent.getElementsByTagName("p");
+        //  for(i=0;i<para.length;i++){
+        //       para[i].style.color="red";
+        //  }
+
+
+        //Create the Elements using javascript createElement()
+        let elemnet=document.createElement("h1");
+        console.log(elemnet);   //<h1></h1>
+
+
+        //create tge Content Using Javascript  createTextNode()
+        let content=document.createTextNode("This is New H1");
+        console.log(content);  //"This is New H1";
+
+        //How to Insert That Content into element  appendChild();
+        elemnet.appendChild(content);
+        console.log(elemnet);
+
+        //Insert That created element into the html element div
+       let parent=document.getElementById("parent");
+       parent.appendChild(elemnet);
+
+
+
+       //REPLACE (Update)
+       function update(){
+        let newel=document.createElement("h3");
+       let newcnt=document.createTextNode("This is Replaced h3")
+       newel.appendChild(newcnt);
+
+       let div1=document.getElementById("div1");
+       let original=document.querySelector("h2");
+
+       div1.replaceChild(newel,original);
+       }
+
+
+       //Delete() 
+      // 1)remove  2)removeChild()
+
+       function Delete(){
+       let parent=document.getElementById("div2");
+    //    parent.remove();
+
+       let child=document.querySelector("h5");
+       parent.removeChild(child);
+        
+       }
+
+
+       //InsertBefore
+
+       function before(){
+        let el=document.createElement("p");
+        let cnt=document.createTextNode("This is New Paragraph");
+        el.appendChild(cnt);
+
+        let parent=document.getElementById("div3");
+        let second=document.getElementById("second");
+
+        parent.insertBefore(el,second)
+
+
+       }
+
+
+        // TASK
+//         1. Create and Append Element
+// Task:
+// Using only JavaScript DOM methods, create a <p> tag with the text "Hello DOM!" and append it inside a <div> with the ID container.
+
+// 2. Create a List Dynamically
+// Task:
+// Create an unordered list (<ul>) with 3 list items (<li>):
+
+// "HTML"
+
+// "CSS"
+
+// "JavaScript"
+
+// Append the <ul> to the <body> using createElement, createTextNode, and appendChild.
+
+// 3. Replace a Node
+// Task:
+// Replace a <p> element (with ID oldPara) with a new paragraph having the text "This is a new paragraph" using only DOM methods.
+
+// 4. Remove a Node
+// Task:
+// Remove a <li> element with ID itemToRemove from its parent <ul> using DOM methods.
+
+
+
+//     5. Nested Elements Creation
+// Task:
+// Create the following structure entirely using DOM methods:
+
+// <div>
+//   <h2>Title</h2>
+//   <p>Description goes here</p>
+// </div>
+// Append it to the <body>.
+
+//     6. Insert Element Before Another
+// Task:
+// Create a <p> element with text "Inserted before" and insert it before a <div> with ID targetDiv.
+
+
+
+
+
+
+
+
+
+      </script>
+
+</body>
+</html>

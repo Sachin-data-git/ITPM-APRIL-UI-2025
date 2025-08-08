@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <h1>This is H1</h1>
+    <h2>This is H2</h2>
+    <p id="original">This is Original</p>
+    <script>
+        //Properties
+        // innerHtml  :- used  to set and get the element with content
+        // innerText  :- used  to set and get the content only
+        // textContent  :- it is used to replace the content only
+
+        //get 
+        let h1=document.querySelector("h1");
+        h1.innerHTML;
+        console.log(h1);
+
+        //get 
+    //     let h1=document.querySelector("h1");
+    //    console.log( h1.innerText);
+        
+  
+        //set
+        // document.querySelector("div").innerHTML="<p>This is new paragraph</p>";
+
+        //set
+        // document.querySelector("div").innerText="<p>This is new paragraph</p>";
+
+
+        //textContent
+        document.getElementById("original").textContent="This is new Text";
+
+
+    </script>
+</body>
+</html>
