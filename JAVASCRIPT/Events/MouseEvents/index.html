@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eaque? Vitae placeat culpa aspernatur qui
+        deserunt cumque asperiores voluptatum voluptate mollitia eum dignissimos nostrum impedit expedita, sint quae
+        odio error?</p>
+    <button onclick="changeColor()">click</button>
+
+    <button id="btn">Click</button>
+
+
+    <script>
+        // function changeColor(){
+        //     let para=document.querySelector("p");
+        //     para.style.color="red"
+
+        // }
+
+        //Event handler
+        // document.querySelector("button").onclick=function(){
+        //            let para=document.querySelector("p");
+        //     para.style.color="red"
+        // }
+
+        //Event Listener
+        // document.querySelector("button").addEventListener("click",()=>{
+        //     let para=document.querySelector("p");
+        //     para.style.color="red"  
+        // })
+
+
+
+        //handler  only one handler per event per element
+        // document.getElementById("btn").onclick=function(){
+        //     alert("button clicked -1 ");
+        // }
+        // document.getElementById("btn").onclick=function(){
+        //     alert("button clicked -2 ");
+        // }
+
+        //listener we can add multiple listener for same event
+        document.getElementById("btn").addEventListener("click", () => {
+            alert("button clicked -1 ")
+        })
+        document.getElementById("btn").removeEventListener("click", () => {
+            alert("button clicked -2 ")
+        })
+
+
+
+        //         Change Text on Click
+        // Create a <p> tag with some text. When it’s clicked (click), change the text to "You clicked me!".
+
+        // Double Click to Change Color
+        // Create a <div> with a background color. On double-click (dblclick), change it to a random color.
+
+        // Right-Click Custom Message
+        // On a contextmenu event (right-click) over an image, prevent the default menu and display "Right click is disabled here!" in an alert.
+
+        // Hover to Show Image
+        // Create an empty <div>. On mouseover, display an image inside it. On mouseout, remove the image.
+
+        // Mouse Move Coordinates
+        // Inside a <div>, track the mouse position with the mousemove event and display the X and Y coordinates in real time.
+
+        // Change Button Size on Hover
+        // On mouseover of a button, increase its size. On mouseout, return it to normal size.
+
+        // Click Counter
+        // Create a <button> and count how many times it’s clicked, showing the count in a <span>.
+
+        // Double Click to Hide Element
+        // Create a paragraph. On dblclick, hide it from the page.
+
+        // Image Zoom on Hover
+        // Create an image that zooms in when the mouse enters (mouseenter) and zooms out when the mouse leaves (mouseleave).
+
+
+    </script>
+</body>
+
+</html>

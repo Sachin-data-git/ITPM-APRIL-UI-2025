@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="" height="300" width="300">
+     <button onclick="prev()">prev</button>
+     <button onclick="next()">next</button>
+
+     <script>
+
+
+        function next(){
+            
+            document.querySelector("img").setAttribute("src","https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg")
+        }
+        function prev(){
+            document.querySelector("img").setAttribute("src","https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg")
+        }
+     </script>
+</body>
+</html>

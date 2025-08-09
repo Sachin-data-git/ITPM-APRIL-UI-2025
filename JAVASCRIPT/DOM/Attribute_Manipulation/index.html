@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #demo {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="password" placeholder="Enter password">
+    <i class="fas fa-eye-slash" onmousedown="show()" onmouseup="hide()"></i>
+    <hr>
+
+    <a href="https://cdnjs.com/" target="_blank">click</a>
+
+    <p id="demo">Lorem ipsum dolor sit amet.</p>
+
+    <script>
+        // setAttribute("attributeName","AttributeValue") -it is used to set the values of any attribute
+        // getAttribute("attributeName") -it is used to get the values of any attribute
+        // removeAttribute("attributeName") -it is used to remove any attribute
+
+        function show() {
+            document.querySelector("input").setAttribute("type", "text");
+            document.querySelector("i").setAttribute("class", "fas fa-eye");
+
+        }
+        function hide() {
+            document.querySelector("input").setAttribute("type", "password")
+            document.querySelector("i").setAttribute("class", "fas fa-eye-slash");
+
+        }
+
+        document.querySelector("i").addEventListener("contextmenu", (event) => {
+            event.preventDefault();
+        })
+
+
+        //getAttribute
+        let hrefvalue = document.querySelector("a").getAttribute("href");
+        console.log(hrefvalue);
+
+        //removeAttribute
+        document.querySelector("p").removeAttribute("id");
+
+
+        //            Task Questions
+        // Change Image Source
+        // Create an img element in HTML with a default image. Using setAttribute(), change the image source to another image when the page loads.
+
+        // Read Link Href
+        // Add an <a> tag in HTML. Use getAttribute() in JavaScript to get the href value and display it inside a <p> tag.
+
+        // Toggle Disabled Attribute
+        // Create an <input> and a button. Use setAttribute() to disable the input and removeAttribute() to enable it again when the button is clicked.
+
+        // Set and Get Custom Data Attribute
+        // Create a <div> with a custom attribute like data-role="admin". Use getAttribute() to read the value and log it, then use setAttribute() to change it to "user".
+
+        // Change Button Type
+        // Create a <button> with type="button". Using setAttribute(), change its type to "submit" when a specific event occurs.
+
+        // Remove Link Target
+        // Create an <a> tag with target="_blank". Use removeAttribute() to remove the target so it opens in the same tab.
+
+        // Change Background Color via Attribute
+        // Create a <div> and set its background color using setAttribute() on the style attribute.
+
+        // Check If Attribute Exists
+        // Create a <p> tag with an id. Use getAttribute() to check if the id exists, and log "Exists" or "Not Exists" in the console.
+
+        // Dynamic Image Alt Text
+        // Create an image without alt. Use setAttribute() to add alt text dynamically, then use getAttribute() to confirm.
+
+        // Remove Inline Style
+        // Create a <div> with inline styles. Use removeAttribute() to remove the style attribute completely.
+
+    </script>
+</body>
+
+</html>
