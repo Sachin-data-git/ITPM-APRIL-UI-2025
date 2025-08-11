@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Data" onchange="getData()" id="demo">
+    <p id="output"></p>
+
+    <span>This is Paragraph</span><br>
+
+    <select name="" id="" onchange="changeColor(this.value)">
+        <option selected disabled>Select Color</option>
+        <option value="red">red</option>
+        <option value="pink">blue</option>
+        <option value="green">green</option>
+        <option value="orange">orange</option>
+    </select>
+
+    <script>
+       function getData(){
+         let value=document.getElementById("demo").value;
+        document.getElementById("output").innerHTML=(" You Type "+value)
+       }
+
+    function changeColor(x){
+        // console.log(x);
+        document.querySelector("span").style.color=x;
+
+    }
+
+    </script>
+</body>
+</html>

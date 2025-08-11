@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+</head>
+<body>
+
+      <form action="" id="myForm">
+        <input type="text" name="Name" id="" placeholder="Enter Name">
+      </form>
+      
+
+      <a href="https://www.pexels.com/search/car/" id="link">click</a>
+
+      <br>
+      <hr>
+      <input type="text" id="demo" >
+    <script>
+
+
+        // document.addEventListener("keypress",(event)=>{
+        //     console.log(event.key);
+        // })
+        // document.addEventListener("keydown",(event)=>{
+        //     console.log(event.key);
+        // })
+        // document.addEventListener("keyup",(event)=>{
+        //     console.log(event.key);
+        // })
+
+   //preventDefault()
+        document.getElementById("myForm").addEventListener("keydown",(event)=>{
+             if(event.key=="Enter"){
+                event.preventDefault();
+             }
+        })
+
+        link.addEventListener("click",(event)=>{
+             event.preventDefault();
+             console.log("you clicked ..")
+        })
+
+        link.addEventListener("dblclick",()=>{
+            window.location="https://www.pexels.com/search/car/";
+        })
+
+
+        document.getElementById("demo").addEventListener("focus",()=>{
+            document.getElementById("demo").style.background="red";
+        })
+        document.getElementById("demo").addEventListener("blur",()=>{
+            document.getElementById("demo").style.background="blue";
+        })
+
+
+
+//         Keyboard Event Practice Tasks
+// 1.Detect Key Press
+// Create an input box and display the key name (event.key) and key code (event.code) of the last pressed key in a paragraph.
+
+//2. Caps Lock Detector
+// Show a message “Caps Lock is ON” when the user types with Caps Lock enabled.
+
+// 3.Typing Counter
+// Count and display how many characters a user has typed in a text area using keydown or input event.
+
+// 4.Shortcut Key Action
+// If the user presses Ctrl + S, show an alert saying “Save action triggered!” without refreshing the page.
+
+//5. Only Numbers Allowed
+// Restrict input so the user can only type numeric keys in a text field.
+
+// 6.Press Enter to Submit
+// On pressing Enter in a text field, log the entered value to the console without a submit button.
+
+
+          
+    </script>
+</body>
+</html>
