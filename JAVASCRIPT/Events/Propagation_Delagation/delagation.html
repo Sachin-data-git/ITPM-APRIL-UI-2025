@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delagation</title>
+</head>
+<body>
+       <ul id="parent">
+        <li id="item1">item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+       </ul>
+
+       <section id="demo">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <span>Lorem ipsum dolor sit amet.</span><br>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <b>Lorem ipsum dolor sit amet.</b><br>
+        <i>Lorem ipsum dolor sit amet.</i><br>
+        <p>Lorem ipsum dolor sit amet.</p>
+       </section>
+
+      
+
+       <script>
+        //    document.getElementById("parent").addEventListener("click",(event)=>{
+        //     //    console.log(event.target.nodeName)
+        //     if(event.target && event.target.tagName=="LI"){
+        //         event.target.style.color="red";
+        //     }
+        //    })
+           document.getElementById("demo").addEventListener("click",(event)=>{
+            //    console.log(event.target.nodeName)
+            if(event.target && (event.target.tagName=="P") ||( event.target.tagName=="B")){
+                event.target.style.color="red";
+            }
+           })
+       </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+     <script>
+
+
+        function first(callback){
+            console.log("First");
+            callback();
+        }
+        first(second);
+
+        // console.log(x);
+
+        //callback function
+        function second(){
+            console.log("second")
+        }
+
+
+        document.addEventListener("click",third)
+
+       
+
+
+        function third(){
+            console.log("third")
+        }
+     </script>
+</body>
+</html>

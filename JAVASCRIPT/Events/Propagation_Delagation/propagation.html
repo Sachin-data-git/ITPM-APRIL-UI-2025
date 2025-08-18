@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propagation</title>
+    <style>
+        section{
+            height: 500px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 300px;
+            width: 500px;
+            border: 2px solid rgb(0, 255, 0);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        span{
+            height: 200px;
+            width: 200px;
+            border: 2px solid rgb(42, 8, 212);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        button{
+            padding: 10px;
+            border-radius: 10px 20px;
+            background-color: yellow;
+            border-color: red;
+
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div>
+            <span>
+                <button>Click</button>
+            </span>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector("button").addEventListener("click",(event)=>{
+            alert("This is Button");
+            // event.stopPropagation();
+        },true)
+        document.querySelector("span").addEventListener("click",(event)=>{
+            alert("This is span");
+            // event.stopPropagation();
+
+        },true)
+        document.querySelector("div").addEventListener("click",()=>{
+            alert("This is div");
+        },true)
+        document.querySelector("section").addEventListener("click",()=>{
+            alert("This is section");
+        },true)
+        document.querySelector("body").addEventListener("click",()=>{
+            alert("This is body");
+        },true)
+    </script>
+    
+</body>
+</html>

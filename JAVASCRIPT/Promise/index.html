@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let myPromise=new Promise((resolve,reject)=>{
+
+        //     let success=true;
+        //     if(success){
+        //         resolve("The operation was successfully..")
+        //     }else{
+                
+        //         reject("The operation failed")
+        //     }
+
+        // })
+
+        // console.log(myPromise);
+
+        // myPromise.then((result)=>{
+        //     console.log(result);
+        // }).catch((error)=>{
+        //     console.error(error);
+        // })
+
+        //methods
+        // Promise.all([
+        //     Promise.resolve(1),
+        //     Promise.reject(2),
+        //     Promise.resolve(3),
+        // ]).then(console.log);
+
+
+        // Promise.allSettled([
+        //     Promise.resolve(1),
+        //     Promise.reject(2),
+        //     Promise.resolve(3),
+        // ]).then(console.log);
+
+     
+
+         let p1=new Promise((resolve)=>{
+            setTimeout(() => {
+                  console.log("first")
+            }, 3000);
+         })
+         let p2=new Promise((resolve)=>{
+            setTimeout(() => {
+                  console.log("second")
+            }, 1000);
+         })
+         let p3=new Promise((resolve)=>{
+            setTimeout(() => {
+                  console.log("third")
+            }, 500);
+         })
+
+         Promise.race([p1,p2,p3]).then((result)=>{
+            console.log(result);
+         }).catch((error)=>{
+            console.log(error);
+         })
+    </script>
+</body>
+</html>

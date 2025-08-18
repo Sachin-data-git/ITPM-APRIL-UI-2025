@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <script>
+        
+        // document.write(currentDate +"<br>");
+        // document.write(currentDate.getHours() +"<br>"); //10
+        // document.write(currentDate.getMinutes()+"<br>"); //01
+        // document.write(currentDate.getSeconds() +"<br>"); //01
+        function changeSecond() {
+            let currentDate = new Date();
+
+            let time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+            document.querySelector("h1").innerHTML = time;
+
+
+        }
+        //setInterval - pre-defined higher order function
+        //it executes task repeateadly after a certain interval
+        //syntax
+        // setInterval(() => {}, interval(miliseconds));
+
+        setInterval(changeSecond, 2000);
+    </script>
+</body>
+
+</html>
