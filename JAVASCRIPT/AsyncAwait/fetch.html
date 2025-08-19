@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // fetch('https://jsonplaceholder.typico')
+        //     .then(response => {
+        //         // console.log(response)
+        //         if (response.ok) {
+        //             return response.json();
+        //         } else {
+        //             throw new Error('Network response was not ok');
+        //         }
+        //     })
+        //     .then(data => console.log(data))
+        //     .catch(error => console.error('There was a problem with the fetch operation:', error));
+
+
+//         fetch(): Initiates a network request to the provided URL.
+//             response.ok: Checks if the HTTP response status is in the range of 200–299, indicating success.
+//         return response.json(): If the response is successful, the data is parsed as JSON for further use.
+// throw new Error(): If the status code indicates an error(e.g., 404 or 500), an error is thrown to handle it.
+//             catch(error): Catches any errors(network or HTTP issues) and logs them to the console for debugging.
+
+
+                fetch("url").then((response) => {
+                    console.log(response);
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    else {
+                        throw new Error("Error msg")
+                    }
+                }).then(data => { console.log(data) });
+    </script>
+</body>
+
+</html>
