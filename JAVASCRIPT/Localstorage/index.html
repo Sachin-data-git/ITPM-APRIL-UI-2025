@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="Demo()">click</button>
+    <script>
+
+        localStorage.setItem("user", "Ajay");
+        // console.log(user);
+
+        console.log(localStorage.getItem("user"));
+
+
+        function Demo() {
+            document.bgColor = "black";
+            localStorage.setItem("color", "black");
+        }
+
+        let m1 = parseInt(localStorage.getItem("n1"))
+        let m2 = parseInt(localStorage.getItem("n2"))
+        console.log(m1 + m2);
+
+        localStorage.removeItem("color");
+
+        // task
+        //     Task 1: Save and Get Username
+
+        // Ask the user to enter their name in an input box.
+
+        // Save it in localStorage.
+
+        // When the page reloads, display the saved name automatically.
+
+        // 🔹 Task 2: Dark Mode Toggle
+
+        // Add a button to switch between Light Mode and Dark Mode.
+
+        // Store the theme preference (light or dark) in localStorage.
+
+        // On reload, apply the saved theme.
+
+        // 🔹 Task 3: Simple Counter
+
+        // Create a button Increase Counter.
+
+        // Each time you click, the counter increases and is saved in localStorage.
+
+        // On refresh, the counter should not reset.
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.wikipedia.org/" id="link">Click</a>
+
+    <form action="" id="myform">
+        <input type="text" name="Name" placeholder="Enter Name" id="">
+    </form>
+
+    <script>
+
+        // we can prevent the by default behaviour of html elements where evnets are available on that elements and after preventing  by default event we can add our own event logic
+        let link=document.getElementById("link");
+        link.addEventListener("click",(event)=>{
+             event.preventDefault();
+             console.log("you clicked on anchor...")
+        })
+        link.addEventListener("dblclick",()=>{
+             window.location="https://www.wikipedia.org/"
+             console.log("you double clicked on anchor...")
+        })
+
+
+        let form=document.getElementById("myform");
+        form.addEventListener("keydown",(event)=>{
+            if(event.key=="Enter"){
+                event.preventDefault();
+                alert("you pressed enter key")
+            }
+        })
+
+        document.addEventListener("contextmenu",(event)=>{
+            event.preventDefault();
+            alert("right click prevented....")
+        })
+
+    </script>
+</body>
+</html>

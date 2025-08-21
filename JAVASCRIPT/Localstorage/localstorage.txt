@@ -1,0 +1,72 @@
+What is localStorage?
+
+localStorage is a Web Storage API in JavaScript.
+
+It lets you store key-value pairs in the browser.
+
+Unlike cookies:
+
+Data is not sent to the server on every request.
+
+Storage limit is around 5MB per domain.
+
+Data is persistent (it does not expire until explicitly removed).
+
+🔹 Basic Methods of localStorage
+
+The localStorage object provides these main methods:
+
+Method             	Description
+setItem(key, value)	Stores data with a key-value pair.
+getItem(key)	Retrieves the value by key.
+removeItem(key)	Removes the key and its value.
+clear()	                 Clears all data from localStorage.
+
+key(index)	Returns the key name at the given index.
+length	Returns the number of stored items.
+🔹 Example Usage
+// Store data
+localStorage.setItem("username", "Sachin");
+localStorage.setItem("age", 25);
+
+// Retrieve data
+console.log(localStorage.getItem("username")); // Sachin
+console.log(localStorage.getItem("age"));      // 25
+
+// Update data (just overwrite)
+localStorage.setItem("age", 26);
+
+// Remove data
+localStorage.removeItem("username");
+
+// Clear all
+localStorage.clear();
+
+🔹 Storing Objects and Arrays
+
+⚠️ localStorage only stores strings.
+If you want to store objects/arrays, you need JSON.stringify() and JSON.parse().
+
+let user = { name: "Sachin", city: "Pune", skills: ["JS", "React"] };
+
+// Store object
+localStorage.setItem("user", JSON.stringify(user));
+
+// Retrieve object
+let storedUser = JSON.parse(localStorage.getItem("user"));
+console.log(storedUser.name); // Sachin
+console.log(storedUser.skills[1]); // React
+
+🔹 When to use localStorage?
+
+✅ Use it for:
+
+Storing user preferences (theme, language, etc.)
+
+Keeping form data temporarily
+
+Saving small app data (e.g., cart items in e-commerce)
+
+❌ Don’t use for:
+
+Sensitive data (like passwords, tokens, personal info) → Use secure storage mechanisms.

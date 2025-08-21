@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        // hoisting is a js machanism where variables and function declaration are moved to the top of their scope before code execution.
+        // only the declaration part hoisted not the initialization/assignments
+
+        // var   hoisted   hoisted with undefined value
+
+        // console.log(x);
+        // var x=5;
+
+        //behind the scenes
+        // var x;
+        //  console.log(x);
+        // var x=5;
+
+
+        // let   hoisted   hoisted but not initialized (they are temporal dead zone)
+        // console.log(y);
+        // let y=10;
+
+        // const   hoisted   hoisted but not initialized (they are temporal dead zone)
+        // console.log(p);
+        // const p=10;
+
+
+
+
+        
+        
+        //function declaration are fully hoisted (entired function)
+         //function calling
+        Demo();
+        //function declaration
+        function Demo(){
+            console.log("This is The body of function");
+        }
+
+        
+        //function expression are not hoisted with the function
+        // sayHello();
+        // let sayHello=function(){
+        //     console.log("hello")
+        // }
+
+
+        demo()
+
+        const demo=()=>{
+            console.log("arrow")
+        }
+
+        //purpose of hoisting
+        //1) Enables function usage before declaration
+        //2) understanding hoisting prevents bugs
+
+       
+
+
+
+     </script>
+</body>
+</html>
